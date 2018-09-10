@@ -4,7 +4,7 @@
           <li
               class="list-group-item"
               v-for="server in servers">
-              <app-server :id="server.id" :status="server.status"></app-server>
+              <app-server :server="server"></app-server>
           </li>
       </ul>
   </div>

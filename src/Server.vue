@@ -1,17 +1,20 @@
 <template lang="html">
   <div>
-    Server #{{ id }} - {{ status }} <button @click="resetStatus">Reset Status</button>
+    Server #{{ server.id }} <button @click="selectedServer">Select</button>
   </div>
 </template>
 
 <script>
+import { serverBus } from './main';
+
 export default {
-  props: ['id', 'status'],
+  props: ['server'],
   methods: {
-    resetStatus: function(){
-      this.status = 'Normal';
+    selectedServer(){
+      serverBus.$emit('pamonha', this.server);
     }
   }
+
 }
 </script>
 
