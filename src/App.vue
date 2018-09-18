@@ -8,7 +8,7 @@
         <hr>
         <div class="row">
             <app-server-list></app-server-list>
-            <app-panel></app-panel>
+            <app-detail></app-detail>
         </div>
         <hr>
         <app-footer></app-footer>
@@ -18,14 +18,14 @@
 <script>
   import Header from './Header'
   import Footer from './Footer'
-  import Panel from './Panel'
+  import Detail from './Detail'
   import ServerList from './ServerList'
 
   export default{
     components: {
       'app-header': Header,
       'app-footer': Footer,
-      'app-panel': Panel,
+      'app-detail': Detail,
       'app-server-list': ServerList
     }
   }

@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    Server #{{ server.id }} <button @click="selectedServer">Select</button>
+    Server {{ server.id }} ({{ server.status }}) <button @click="selectedServer">Select</button>
   </div>
 </template>
 
